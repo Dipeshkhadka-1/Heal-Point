@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mental Wellness Platform offering interactive support and resources.">
+  <title>Mental Wellness Platform</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="website/Style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="website/favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Header with Sticky Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="website/image/Screenshot from 2024-10-20 10-41-27.png" alt="HealPoint" class="logo-img">
+        <img src="website/image/Screenshot from 2024-10-20 10-42-50.png" alt="HealPoint" class="logo-img">
+
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="About.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="Community.html" class="nav-link">Community</a></li>
+          <li><a href="contact us.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="main-section">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Elevate Your Mental Wellness</h1>
+        <p>Access expert guidance, peer support, and resources designed for your mental health journey.</p>
+        <button class="btn primary-btn" onclick="scrollToSection('services')">Get Started</button>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.inc.com/uploaded_files/image/1920x1080/shutterstock_619960997_360000.jpg" alt="Mental Health Support Illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-user-md service-icon"></i>
+          <h3>Professional Counseling</h3>
+          <p>Talk to certified mental health professionals at your convenience.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-users service-icon"></i>
+          <h3>Peer Support Groups</h3>
+          <p>Join groups to share experiences and receive anonymous support.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-heart service-icon"></i>
+          <h3>Self-Assessment Tools</h3>
+          <p>Track your mental wellness progress with interactive quizzes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="community-section">
+    <div class="container">
+      <h2>Join Our Community</h2>
+      <p>Connect with like-minded individuals in a supportive and safe environment.</p>
+      <button class="btn primary-btn" onclick="openModal()">Join Now</button>
+    </div>
+  </section>
+
+  <!-- Modal for Join Us -->
+  <div id="joinModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Join Our Community</h2>
+      <form class="join-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn primary-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Heal Point Platform. All Rights Reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+        </ul>
+    </div>
+</footer>
+
+  <!-- External JS -->
+  <script src="website/script.js"></script>
+
+</body>
+</html>

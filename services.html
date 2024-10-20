@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Mental Wellness Platform</title>
+    <link rel="stylesheet" href="website/styles3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Home</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="About.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link active">Our Services</a></li>
+                    <li><a href="Community.html" class="nav-link">Community</a></li>
+                    <li><a href="contact us.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Explore our wide range of mental health services designed to support you.</p>
+
+            <div class="service-cards">
+
+                <!-- Self-Assessment Card -->
+                <div class="service-card">
+                    <img src="https://media.bleumag.com/brand-img/TdIYc_dBn/0x0/illustration-gears-in-head-1673040089505.jpg" alt="Self Assessment">
+                    <h3>Self Assessment</h3>
+                    <p>Take our mental health quizzes to understand your well-being.</p>
+                    <button class="btn" onclick="bookNow('Self Assessment')">Start Quiz</button>
+                </div>
+
+                <!-- Meditation Sessions Card -->
+                <div class="service-card">
+                    <img src="https://cdn.prod.website-files.com/5e261bc81db8f19fa664899d/6490ccc4e34a38063b558474_out-0.png" alt="Meditation Sessions">
+                    <h3>Meditation Sessions</h3>
+                    <p>Join our guided meditation sessions to help manage stress.</p>
+                    <button class="btn" onclick="bookNow('Meditation Session')">Book Session</button>
+                </div>
+
+                <!-- Make Appointment Card -->
+                <div class="service-card">
+                    <img src="https://img.freepik.com/premium-photo/mental-health-specialist_1077802-161150.jpg" alt="Make Appointment">
+                    <h3>Make an Appointment</h3>
+                    <p>Connect with licensed therapists and counselors online.</p>
+                    <button class="btn" onclick="bookNow('Therapist Appointment')">Book Appointment</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Book a <span id="serviceType"></span></h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" class="submit-btn">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Logo</div>
+                <p>44600 Kamal Pokhari, Kathmandu, Nepal</p>
+                <p>info@supporthealpoint.com</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Heal Point Platform. All Rights Reserved.</p>
+                <p><a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="website/script3.js"></script>
+</body>
+</html>
