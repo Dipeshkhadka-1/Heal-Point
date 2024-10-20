@@ -1,0 +1,65 @@
+/* About Section Styles */
+.about-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: #000000;
+}
+
+.values-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.values-list li {
+    background: #e0f7fa;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #ee0518;
+    text-decoration: none;
+}
+
